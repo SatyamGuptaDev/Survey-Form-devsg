@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+
+<body>
+        <div class="container">
+            <header>
+            <h1>Survey Form</h1>
+            <p class="thank">Thank you for taking the time to help us improve the platform </p>
+            </header>
+
+            <form class="form">
+                <div class="div">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder=" Name">
+                </div>
+                <div class="div">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder=" E-mail">
+                </div>
+                <div class="div">
+                    <label for="Age">Age<span style="font-style: italic; font-weight: 100;">(optional)</span></label>
+                    <input type="number" name="Age" id="Age" placeholder=" Age">
+                </div>
+                <div class="div">
+                    <label for="role">Which option best describes your current role?</label>
+                    <select class="role" id="role">
+                        <option disabled selected value> Select current role</option>
+                        <option value="student"> Student</option>
+                        <option value="job"> Full Time Job</option>
+                        <option value="learner"> Full Time Learner</option>
+                        <option value="preferNo"> Prefer not to say</option>
+                        <option value="other"> Other</option>
+                    </select>
+                </div>
+
+                <div class="div">
+                    <h3>Would You Recommend Our Product To A Friend ?</h3>
+                    <div class="option"><input type="radio" name="recommend" id="Definitely" value="Definitely"><label for="Definitely">Definitely</label></div>
+                    <div class="option"><input type="radio" name="recommend" id="Maybe" value="Maybe"> <label for="Maybe">Maybe</label></div>
+                    <div class="option"><input type="radio" name="recommend" id="Never" value="Never"><label for="Never">Never</label> </div>
+                </div>
+
+                <div class="div">
+                    <h3>Select Things That You Liked About Our Product</h3>
+                    <div class="option"><input type="checkbox" name="favorite-feature" id="ui" value="ui"><label for="ui">UI</label></div>
+                    <div class="option"><input type="checkbox" name="favorite-feature" id="service" value="service"><label for="service">Service</label></div>
+                    <div class="option"><input type="checkbox" name="favorite-feature" id="features" value="features"><label for="features">Features</label></div>
+                    <div class="option"><input type="checkbox" name="favorite-feature" id="simpleness" value="simpleness"><label for="simpleness">Simpleness</label></div>
+                </div>
+                <div class="div">
+                    <label for="remark">Remarks</label>
+                    <textarea  id="remark" placeholder="Tell Us How Can We Improve.."></textarea>
+                </div>
+                <div class="div">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
